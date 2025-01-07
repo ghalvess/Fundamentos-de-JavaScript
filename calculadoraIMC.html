@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicitar dados do usuario
+        let peso = parseFloat(prompt("Digite seu peso (em Kg)"))
+        let altura = parseFloat(prompt("Digite sua altura"))
+
+        // Calcular IMC
+        let imc = peso / (altura * altura)
+
+        console.log(imc)
+
+        if(imc < 18.5){
+            console.log("Sua classificação é magreza")
+        }else if(imc > 18.5 && imc < 24.9){
+            console.log("Sua classificação é Normal")
+        }else if(imc > 25 && imc < 29.9){
+            console.log("Sua classificação é Sobrepeso")
+        }else if(imc > 30 && imc < 29.9){
+            console.log("Sua classificação é Obesidade")
+        }else if(imc > 40){
+            console.log("Sua classificação é Obesidade Grave")
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
